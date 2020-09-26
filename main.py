@@ -30,7 +30,7 @@ def api_wcy():
 
     try:
         # Index data to dictionary -------------------------------------------------------------------------------------
-        url = 'http://www.dk0wcy.d/magnetogram'                         # URL of the HTML data
+        url = 'http://www.dk0wcy.de/magnetogram'                         # URL of the HTML data
         html = requests.get(url)                                        # Generate request
         parsed_html = BeautifulSoup(html.content, 'html.parser')        # Parse HTML data
         data = parsed_html.find_all('b')                                # Extract <b> tags (data tags, in this case)
