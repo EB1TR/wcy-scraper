@@ -40,15 +40,15 @@ def api_wcy():
         #
 
         # Index data to dictionary -------------------------------------------------------------------------------------
-        wcy_index['a-boulder'] = int(data[0].get_text())
-        wcy_index['a-kiel'] = int(data[3].get_text())
+        wcy_index['aboulder'] = int(data[0].get_text())
+        wcy_index['akiel'] = int(data[3].get_text())
         wcy_index['ssn'] = int(data[6].get_text())
         wcy_index['sfi'] = int(data[8].get_text())
         #
 
         # GMF data to dictionary ---------------------------------------------------------------------------------------
-        wcy_gmf['k-3h'] = int(data[1].get_text())
-        wcy_gmf['k-current'] = float(data[4].get_text())
+        wcy_gmf['k3h'] = int(data[1].get_text())
+        wcy_gmf['kcurrent'] = float(data[4].get_text())
         wcy_gmf['aurora'] = data[7].get_text()
         #
 
